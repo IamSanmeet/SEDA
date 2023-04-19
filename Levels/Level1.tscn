@@ -1,0 +1,30 @@
+[gd_scene format=2]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="TileMap" parent="."]
+format = 1
+
+[node name="Spqwn" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Spqwn"]
+
+[node name="Exit_to_2" type="Area2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Exit_to_2"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Exit_to_2"]
+
+[node name="Player_Container" type="Node2D" parent="."]
+
+[node name="Backup_Camera" type="Camera2D" parent="Player_Container"]
+
+[node name="Enemy_Container" type="Node2D" parent="."]
+
+[node name="Platform" type="TileMap" parent="."]
+format = 1
+
+[node name="Foreground" type="TileMap" parent="."]
+format = 1
+
+[node name="Camera" type="Camera2D" parent="."]
