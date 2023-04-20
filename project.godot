@@ -11,10 +11,6 @@ config_version=4
 [application]
 
 config/name="Seda"
-<<<<<<< Updated upstream
-=======
-run/main_scene="res://Player/Player.tscn"
->>>>>>> Stashed changes
 config/icon="res://icon.png"
 
 [gui]
