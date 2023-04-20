@@ -11,10 +11,10 @@ func _physics_process(_delta):
 	position += velocity
 
 	velocity = move_and_slide(dv)
-	if is_on_floor() == false:
+	if is_on_wall() == false or is_on_floor() == false:
 		print("false")
 		dv.y += gravity
-	if is_on_floor() == true and dv.y != 0:
+	if is_on_wall() == true and dv.y != 0 or is_on_floor() == true and dv.y != 0:
 		dv.y -= 1
 		print("true")
 		
