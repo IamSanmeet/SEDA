@@ -30,7 +30,6 @@ Music Inspiration: https://www.youtube.com/watch?v=RiRNs47U4kQ&list=PLjS2ZOuRnoc
 None
 
 # Created by: SEDA
-(and contributions)  
 Sanmeet Singh: Coding/Programming  
 Elijah Brown: Coding, Tile Maps, Sprites  
 Deryk Tibbs: Level Design  
