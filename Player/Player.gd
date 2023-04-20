@@ -1,17 +1,24 @@
 extends KinematicBody2D
-onready var SM = $StateMachine
 
 export var velocity = Vector2.ZERO
-export var gravity = 0 
+export var gravity = 1
 export var speed = 5
 export var dv= Vector2.ZERO 
 
 
 func _physics_process(_delta):
-	velocity +=dv
-	velocity.y+=gravity
-	if is_on_floor():
-		velocity.y=0
-	if velocity != Vector2.ZERO:
-		velocity = move_and_slide(velocity)
+
+	position += velocity
+
+	velocity = move_and_slide(dv)
+	if is_on_floor() == false:
+		print("false")
+		dv.y += gravity
+	if is_on_floor() == true and dv.y != 0:
+		dv.y -= 1
+		print("true")
+		
+	
+	if Input.is_action_just_pressed("jump"):
+		dv.y += 40
 		
