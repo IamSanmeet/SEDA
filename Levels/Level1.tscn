@@ -1768,7 +1768,7 @@ __meta__ = {
 texture = ExtResource( 7 )
 
 [node name="Exit_to_2" type="Area2D" parent="."]
-position = Vector2( 1544, -523 )
+position = Vector2( 1208, -8889 )
 script = ExtResource( 13 )
 
 [node name="Sprite" type="Sprite" parent="Exit_to_2"]
