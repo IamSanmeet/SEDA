@@ -26,13 +26,19 @@ func _physics_process(_delta):
 	velocity += dv
 	velocity.x = clamp(velocity.x, -300, 300)
 	velocity = move_and_slide(velocity, Vector2.UP)
-	if abs(velocity.x) < 1 and $AnimatedSprite.animation != "Idle":
-		$AnimatedSprite.set_animation("Idle")
-	if abs(velocity.x) >= 1 and $AnimatedSprite.animation != "Run":
-		$AnimatedSprite.set_animation("Run")
-	if not is_on_floor() and $AnimatedSprite.animation != "Jump":
-		$AnimatedSprite.set_animation("Jump")
+	if not is_on_floor():
+		anim("Jump")
+	elif abs(velocity.x) < 1:
+		anim("Idle")
+	elif abs(velocity.x) >= 1:
+		anim("Run")
+		
+	print($AnimatedSprite.animation)
 		
 func _on_Timer_timeout():
 	print(velocity)
 	print(is_on_floor())
+	
+	
+func anim(a):
+	if $AnimatedSprite.animation != a: $AnimatedSprite.play(a)
