@@ -28,4 +28,10 @@ func physics_process(delta):
 		else:
 			SM.set_state("Idle")
 
-	player.velocity = move_and_slide(player.velocity, Vector2.UP)
+		player.velocity.y = 0
+		if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
+			SM.set_state("Moving")
+		else:
+			SM.set_state("Idle")
+
+	player.velocity = move_and_slide (player.velocity, Vector2.UP)
