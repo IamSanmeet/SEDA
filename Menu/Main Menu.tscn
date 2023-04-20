@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Menu/Main Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/DotGothic16-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Menu/Main.gd" type="Script" id=3]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Assets/DotGothic16-Regular.ttf"
@@ -57,5 +58,9 @@ margin_bottom = 91.0
 custom_fonts/font = SubResource( 4 )
 text = "Quit"
 
+[node name="Main" type="AudioStreamPlayer" parent="."]
+script = ExtResource( 3 )
+
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
+[connection signal="finished" from="Main" to="Main" method="_on_Main_finished"]
