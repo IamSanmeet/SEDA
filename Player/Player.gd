@@ -1,9 +1,10 @@
 extends KinematicBody2D
+onready var SM = $StateMachine
 
-var velocity = Vector2.ZERO
-var gravity = 0 
-var speed = 5
-var dv= Vector2.ZERO 
+export var velocity = Vector2.ZERO
+export var gravity = 0 
+export var speed = 5
+export var dv= Vector2.ZERO 
 
 
 func _physics_process(_delta):
