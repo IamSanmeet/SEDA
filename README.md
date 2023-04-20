@@ -11,18 +11,17 @@ The objective of our game is to completed both the correct inversion of the towe
 Some struggles in the development stage of our game is time management of adding in all of the features we had all brainstromed. We quickly realized that what we wanted (idealy) was not all feasible in the amount of time we had to create this game. We also had some struggle with getting the player to work properly.
 
 ## Implementation
-Features:
-Reversed Music
-Isometric Platforms/Tiles
-Relavent Background Art
-Animated Player
-Multiple Levels
+Reversed Music  
+Isometric Platforms/Tiles  
+Relavent Background Art  
+Animated Player  
+Multiple Levels  
 
-All Assets were created by the SEDA team:
-Music (all): Anika Luehrmann
-Player Sprite: Elijah Brown
-Tile Map: Elijah Brown
-Background Art: ??
+**All Assets were created by the SEDA team:**  
+Music (all): Anika Luehrmann  
+Player Sprite: Elijah Brown  
+Tile Map: Elijah Brown  
+Background Art: ??  
 
 ## References
 Music Inspiration: https://www.youtube.com/watch?v=RiRNs47U4kQ&list=PLjS2ZOuRnocRCZgMBfBNXe04yCWR0ZZJC&index=1
@@ -31,9 +30,9 @@ Music Inspiration: https://www.youtube.com/watch?v=RiRNs47U4kQ&list=PLjS2ZOuRnoc
 None
 
 # Created by: SEDA
-(and contributions)
-Sanmeet Singh: Coding/Programming
-Elijah Brown: Coding, Tile Maps, Sprites
-Deryk Tibbs: Level Design
-Anika Luehrmann: Music/README
+(and contributions)  
+Sanmeet Singh: Coding/Programming  
+Elijah Brown: Coding, Tile Maps, Sprites  
+Deryk Tibbs: Level Design  
+Anika Luehrmann: Music/README  
 
