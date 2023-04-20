@@ -33,5 +33,4 @@ func physics_process(delta):
 			SM.set_state("Moving")
 		else:
 			SM.set_state("Idle")
-
 	player.velocity = move_and_slide (player.velocity, Vector2.UP)
