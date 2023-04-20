@@ -3,6 +3,7 @@ extends Node
 onready var SM = get_parent()
 onready var player = get_node("../..")
 export var velocity = Vector2.ZERO
+
 func _ready():
 	yield(player, "ready")
 
