@@ -1698,7 +1698,8 @@ zoom = Vector2( 2, 2 )
 
 [node name="Player" parent="." instance=ExtResource( 11 )]
 position = Vector2( 2414, -216 )
-scale = Vector2( 3, 3 )
+scale = Vector2( 2.5, 2.5 )
+jump = 1700
 
 [node name="Sprite" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.513726 )
